@@ -1,0 +1,37 @@
+Network Properties (settings) / Change adapter options, then right click on your active network and click Properties. Follow the settings below:
+
+Client for Microsoft Networks / Disabled
+File and Printer Sharing for Microsoft Networks / Disabled
+QoS Packet Scheduler / Enabled
+Internet Protocol Version 4 (TCP/IPv4) / Enabled
+Microsoft Networks Adapter Multiplexor Protocol / Disabled
+Microsoft LLDP Protocol Diver / Disabled
+Internet Protocol Version 6 (TCP/IPv6) / Disabled
+Link-Layer Topology Discovery Responder / Disabled
+Link-Layer Topology Discovery Mapper I/O Driver / Disabled
+
+After disabling these settings, head over to the Configure tab and go to Advanced (make sure you have your network drivers downloaded). You might not see all of these options if you have Wi-Fi; that's why I made the Bat file. Run the bat file even if you're on Ethernet or Wi-Fi, but still try and do the settings.
+
+Advanced EEE / Disabled
+Network Address / Not Present - MAKE SURE!
+ARP Offload / Disabled
+Flow Control / Disabled
+IPv4 Checksum Offload / Disabled
+Large Send Offload v2 (IPv6) / Disabled
+TCP Checksum Offload (IPv6) / Disabled
+UDP Checksum Offload (IPv6) / Disabled
+
+ Open CMD as admin and enter:
+
+ipconfig /flushdns
+ipconfig /registerdns
+ipconfig /release
+ipconfig /renew
+netsh winsock reset
+
+
+Alright, for the final step, fire up that bat file to clear out IPv6 and other network settings.
+ After that, give your PC a restart, open CMD, and type in ipconfig /all. 
+Make sure you only see an IPv4 Address and not an IPv6 Address. 
+If there's no IPv6 Address in there, you're good to play without any risk of getting kicked or a 24-hour ban. 
+ ( remember to use a good spoofer )
