@@ -1,6 +1,6 @@
 @echo off
 color A
-title Chaos Network Fix
+title  Network Fix
 echo Make Sure To Run This Batch As Admin / - dyhis da goat
 echo Press Any Key To Continue!
 pause >nul
